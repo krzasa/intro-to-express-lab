@@ -73,18 +73,10 @@ app.get('/shoes', (req,res) =>{
             filt = shoes
         }
         res.send(filt) // returns the filtered list 
-
-
 });
 // http://localhost:3000/shoes?minPrice=10&maxPrice=2000&type=sneaker
 
-// if (filt.length != 0){
-//     res.send(...filt)
-// }
-// }else {
-//     res.send(...shoes) 
-// }
-// })
+
     
 
 
