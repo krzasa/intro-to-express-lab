@@ -19,13 +19,15 @@ const collectibles = [
     { name: "Jet Boots", price: 1000, type: "boot" },
     { name: "Fifty-Inch Heels", price: 175, type: "heel" }
 ];
-
+// Exercise 1
 // app.get('/greetings/:name', (req,res) =>{
 //     res.send(`Hello there ${req.params.name}`)
     
 // })
 //http://localhost:3000/greetings/Christy
 
+
+//Exercise 2
 // app.get('/roll/:number', (req,res) =>{
 //     if(Number.isInteger(parseInt(req.params.number))){
 //         let num = Math.floor(Math.random() * parseInt(req.params.number)) + 1;
@@ -36,6 +38,8 @@ const collectibles = [
 // })
 //http://localhost:3000/roll/30
 
+// Exercise 3 
+
 // app.get('/collectibles/:ind', (req,res) =>{
 //     if(parseInt(req.params.ind) <= collectibles.length ){
 //         let numArr = parseInt(req.params.ind)-1 // -1 because the array starts at zero
@@ -45,6 +49,8 @@ const collectibles = [
 //     }
 // })
 // http://localhost:3000/collectibles/5
+
+//Exercise 4 
 
 app.get('/shoes', (req,res) =>{
     let filt = []
@@ -70,7 +76,7 @@ app.get('/shoes', (req,res) =>{
 
 
 });
-
+// http://localhost:3000/shoes?minPrice=10&maxPrice=2000&type=sneaker
 
 // if (filt.length != 0){
 //     res.send(...filt)
